@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <!-- example-1 -->
+  <div class="container">
+    <div class="img-container">
+      <img src="./images/date-img.png" alt="">
+    </div>
+    <div class="text">
+      <h3>Hey!what is the date today?</h3>
+      <button type="button" onclick="showDate()" class="btn btn-info text-white">Click to see the date ,please.</button>
+      <p id="sd"></p>
+    </div>
+  </div>
+  <!-- example-2 -->
+  <hr>
+  <div class="container">
+    <div class="img-container">
+      <img src="./images/date-2-img.png" alt="">
+    </div>
+    <div class="text">
+      <h3 id="ct">Is She talking about this date?</h3>
+      <button type="button" ondblclick="changeText()" class="btn btn-info text-white">Double clickFind the
+        answer</button>
+    </div>
+  </div>
+  <!-- example-3 -->
+  <hr>
+  <div class="container">
+    <h3>please turn on/off the light</h3>
+    <button type="button" onmouseover="bulbOn()" class="btn btn-info text-white">ON</button>
+    <button type="button" onmouseout="bulbOff()" class="btn btn-info text-white">OFF</button>
+    <img id="img" src="./images/bulb-off.jpg" alt="">
+  </div>
+  <!-- example-4 -->
+  <hr>
+  <div class="container">
+    <h3 id="clr">RED</h3>
+    <button type="button" onClick="changeCss()" class="btn btn-dark">Change heading color</button>
+  </div>
+  <!-- example-5-->
+  <hr>
+  <div class="container">
+    <h3 id="st">Hello!</h3>
+    <button type="button" onclick="showText()" class="btn btn-info text-white">Click to see the text</button>
+    <button type="button" onclick="hideText()" class="btn btn-info text-white">click to hide the text</button>
+  </div>
+  <!-- example-6-->
+  <hr>
+  <div class="container">
+    <h3> JavaScript typeof Operator</h3>
+    <p id="ctype"></p>
+  </div>
+  <!-- example-7-->
+  <hr>
+  <div class="container">
+    <h3>String Interpolation Example</h3>
+    <p id="so"></p>
+  </div>
+  <!-- example-8-->
+  <hr>
+  <div class="container">
+    <h3>String Length Property</h3>
+    <p id="sl"></p>
+  </div>
+  <!-- example-9-->
+  <hr>
+  <div class="container">
+    <h3>String split() Method</h3>
+    <p id="sp"></p>
+  </div>
+  <!-- example-10-->
+  <hr>
+  <div class="container">
+    <h3>Split String by Comma</h3>
+    <p id="sbyc"></p>
+  </div>
+  <!-- example-11-->
+  <hr>
+  <div class="container">
+    <h3>Accessing Array Elements</h3>
+    <p id="ar"></p>
+  </div>
+
+  <!-- example-12-->
+  <hr>
+  <div class="container">
+    <h3>Finding Index of an Element in Array</h3>
+    <p id="arin"></p>
+  </div>
+  <!-- example-13-->
+  <hr>
+  <div class="container">
+    <h3>If Statement Example</h3>
+    <p id="is"></p>
+  </div>
+  <!-- example-14-->
+  <hr>
+  <div class="container">
+    <h3>Logical OR (||) Operator Example</h3>
+    <p id="orop"></p>
+  </div>
+  <!-- example-15-->
+  <hr>
+  <div class="container">
+    <h3>Ternary Operator Example</h3>
+    <p id="to"></p>
+  </div>
+  <!-- example-16-->
+  <hr>
+  <div class="container">
+    <h3>Switch Statement with Ternary Operator</h3>
+    <p id="sw"></p>
+  </div>
+  <!-- example-17-->
+  <hr>
+  <div class="container">
+    <h3>Displaying Object Properties in HTML</h3>
+    <p id="op"></p>
+  </div>
+  <!-- example-18-->
+  <hr>
+  <div class="container">
+    <h3>Class and Object Example</h3>
+    <p id="c"></p>
+  </div>
+  <!-- example-19 -->
+  <div class="container">
+    <hr>
+    <h3>Variable Assignment and DOM Update</h3>
+    <p id="ar"></p>
+  </div>
+  <!-- example-20 -->
+  <div class="container">
+    <hr>
+    <h3>Scientific Notation with DOM Update</h3>
+    <p id="lr"></p>
+  </div>
+  <!-- example-21 -->
+  <div class="container">
+    <hr>
+    <h3>Using Number.EPSILON</h3>
+    <p id="ep"></p>
+  </div>
+  <!-- example-22 -->
+  <div class="container">
+    <hr>
+    <h3>Max value</h3>
+    <p id="mv"></p>
+  </div>
+  <!-- example-23 -->
+  <div class="container">
+    <hr>
+    <h3>Min value</h3>
+    <p id="minv"></p>
+  </div>
+  <!-- example-24  -->
+  <div class="container">
+    <hr>
+    <h3>Max safe integer</h3>
+    <p id="msi"></p>
+  </div>
+  <!-- example-25  -->
+  <div class="container">
+    <hr>
+    <h3>Min safe integer</h3>
+    <p id="minsi"></p>
+  </div>
+  <!-- example-26  -->
+  <div class="container">
+    <hr>
+    <h3>Positive infinity property</h3>
+    <p id="pinf"></p>
+  </div>
+
+
+  <!-- example-27  -->
+  <div class="container">
+    <hr>
+    <h3>The forEach() method</h3>
+    <p id="arrayi"></p>
+  </div>
+  <!-- example-28  -->
+  <div class="container">
+    <hr>
+    <h3>The map() method</h3>
+    <p id="map"></p>
+  </div>
+  <!-- example-29  -->
+  <div class="container">
+    <hr>
+    <h3>The flatMap() method</h3>
+    <p id="fmap"></p>
+  </div>
+  <!-- example-30  -->
+  <div class="container">
+    <hr>
+    <h3>Math.round()</h3>
+    <p id="math"></p>
+  </div>
+  <!-- example-31  -->
+  <div class="container">
+    <hr>
+    <h3>Math.ceil()</h3>
+    <p id="mathc"></p>
+  </div>
+  <!-- example-32  -->
+  <div class="container">
+    <hr>
+    <h3>Math.floor()</h3>
+    <p id="mathf"></p>
+  </div>
+  <!-- example-33  -->
+  <div class="container">
+    <hr>
+    <h3>Math.turnc()</h3>
+    <p id="matht"></p>
+  </div>
+  <!-- example-34  -->
+  <div class="container">
+    <hr>
+    <h3>Math.sign()</h3>
+    <p id="maths"></p>
+  </div>
+  <!-- example-35  -->
+  <div class="container">
+    <hr>
+    <h3>Math.pow()</h3>
+    <p id="mathp"></p>
+  </div>
+  <!-- example-36  -->
+  <div class="container">
+    <hr>
+    <h3>Math.sin()</h3>
+    <p id="mathsin"></p>
+  </div>
+  <!-- example-37  -->
+  <div class="container">
+    <hr>
+    <h3>Math.min()</h3>
+    <p id="mathmin"></p>
+  </div>
+  <!-- example-38  -->
+  <div class="container">
+    <hr>
+    <h3>Math.random()</h3>
+    <button type="button" onclick="displayRandom()">Click Me</button>
+    <p id="mathran"></p>
+  </div>
+  <!-- example-39 --> Booleans
+  <div class="container">
+    <hr>
+    <h3>Booleans</h3>
+    <p id="bool"></p>
+  </div>
+  <!-- example-40 -->
+  <div class="container">
+    <hr>
+    <h3>Displaying Values from a Map</h3>
+    <p id="maparr"></p>
+  </div>
+  <!-- example-41 -->
+  <div class="container">
+    <hr>
+    <h3>While Loop</h3>
+    <p id="wh"></p>
+  </div>
+  <!-- example-42 -->
+  <div class="container">
+    <hr>
+    <h3>Do While Loop</h3>
+    <p id="dwh"></p>
+  </div>
+  <!-- example-43 -->
+  <div class="container">
+    <hr>
+    <h3>Loop with br statement</h3>
+    <p id="lwb"></p>
+  </div>
+  <!-- example-44 -->
+  <div class="container">
+    <hr>
+    <h3>Loop with continue statement</h3>
+    <p id="lwc"></p>
+  </div>
+  <!-- example-45 -->
+  <div class="container">
+    <hr>
+    <h3>Iterate over an Array</h3>
+    <p id="iarr"></p>
+  </div>
+  <!-- example-46 -->
+  <div class="container">
+    <hr>
+    <h3>Iterate over a set</h3>
+    <p id="ios"></p>
+  </div>
+  <!-- example-47 -->
+  <div class="container">
+    <hr>
+    <h3>Iterate over a set</h3>
+    <p id="iom"></p>
+  </div>
+  <!-- example-48 -->
+  <div class="container">
+    <hr>
+    <h3>The add() Method</h3>
+    <p id="addm"></p>
+  </div>
+  <!-- example-49 -->
+  <div class="container">
+    <hr>
+    <h3>The has() Method</h3>
+    <p id="hasm"></p>
+  </div>
+  <!-- example-50 -->
+  <div class="container">
+    <hr>
+    <h3>Error Handling</h3>
+    <p id="err"></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
